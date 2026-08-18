@@ -16,7 +16,11 @@ export const MyAwesomeApp = () => {
         <>
             <h1>{ firstName }</h1>
             <h2>{ lastName }</h2>
-            <p>{ fruits.join(', ').toUpperCase()}</p>
+            <p style={{
+                backgroundColor: 'red',
+                borderRadius: 10,
+                padding: 30
+            }}>{ fruits.join(', ').toUpperCase()}</p>
             <h3>{ isActive ? 'Activo' : 'Inactivo' }</h3>
             <h4>{ JSON.stringify(Person)}</h4>
 
