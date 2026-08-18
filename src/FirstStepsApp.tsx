@@ -18,7 +18,7 @@ export function FirsStepsApp() {
             <h1>Carrito de Compra</h1>
             {
                 itemsInCar.map( ({productName, quantity}) => (
-                    <ItemCounterApp name={productName} quantity={quantity}/>
+                    <ItemCounterApp key= {productName} name={productName} quantity={quantity}/>
                 ))
             }
             {/* <ItemCounterApp name='Nintendo Switch' quantity={50}/>
