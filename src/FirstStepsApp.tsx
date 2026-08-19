@@ -1,5 +1,4 @@
-import { MouseEventHandler } from "react";
-import { ItemCounterApp } from "./shopping-cart/itemCounterApp";
+import { ItemCounterApp } from "./shopping-cart/ItemCounterApp";
 
 interface ItemsInCar {
     productName: string,
@@ -21,7 +20,7 @@ export function FirsStepsApp() {
             <h1>Carrito de Compra</h1>
             {
                 itemsInCar.map( ({productName, quantity}) => (
-                    <ItemCounterApp key= {productName} name={productName} quantity={quantity}/>
+                    <ItemCounterApp key={productName} name={productName} quantity={quantity}/>
                 ))
             }
             {/* <ItemCounterApp name='Nintendo Switch' quantity={50}/>
